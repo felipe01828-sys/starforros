@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Star Forros - A Maior do Brasil</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <header class="navbar-slim">
+    <div class="nav-container-slim">
+      <div class="brand-central">
+        <img src="Imagens/logo%20star.jpg" alt="Logo Star Forros" class="nav-logo">
+        <div class="brand-text">
+          <h1>Star Forros</h1>
+          <span>A Maior do Brasil</span>
+        </div>
+      </div>
+      <button class="hamburger" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <div id="side-menu" class="side-menu">
+    <div class="side-menu-header">
+      <span>Navegação</span>
+      <button class="close-btn" onclick="toggleMenu()"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="side-menu-content">
+      <ul class="nav-links-side">
+        <li><a href="#inicio" onclick="toggleMenu()">Início</a></li>
+        <li><a href="#sobre" onclick="toggleMenu()">Sobre a Star Forros</a></li>
+        <li><a href="#destaques" onclick="toggleMenu()">Especialidades</a></li>
+        <li><a href="#projetos" onclick="toggleMenu()">Galeria</a></li>
+      </ul>
+      <div class="divider"></div>
+      <h3 class="side-title">Central de Atendimento</h3>
+      
+      <div class="accordion">
+        <details>
+          <summary>São Paulo (SP) <i class="fa-solid fa-chevron-down"></i></summary>
+          <div class="acc-content">
+            <a target="_blank" href="https://wa.me/5511910854257">Caieiras <i class="fa-brands fa-whatsapp"></i></a>
+            <a target="_blank" href="https://wa.me/5511912580468">Guarulhos <i class="fa-brands fa-whatsapp"></i></a>
+            <a target="_blank" href="https://wa.me/5511930214430">Itaquaquecetuba <i class="fa-brands fa-whatsapp"></i></a>
+            <a target="_blank" href="https://wa.me/5511930972222">Carapicuíba <i class="fa-brands fa-whatsapp"></i></a>
+            <a target="_blank" href="https://wa.me/5511986521786">Salto <i class="fa-brands fa-whatsapp"></i></a>
+            <a target="_blank" href="https://wa.me/5511996742861">Jundiaí <i class="fa-brands fa-whatsapp"></i></a>
+            <a target="_blank" href="https://wa.me/5512997153562">S. José dos Campos <i class="fa-brands fa-whatsapp"></i></a>
+            <a target="_blank" href="https://wa.me/5513996442483">São Vicente <i class="fa-brands fa-whatsapp"></i></a>
+            <a target="_blank" href="https://wa.me/5519971516669">Campinas <i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </details>
+
+        <details>
+          <summary>Bahia (BA) <i class="fa-solid fa-chevron-down"></i></summary>
+          <div class="acc-content">
+            <a target="_blank" href="https://wa.me/5571984691941">Camaçari <i class="fa-brands fa-whatsapp"></i></a>
+            <a target="_blank" href="https://wa.me/5571991367361">Pirajá <i class="fa-brands fa-whatsapp"></i></a>
+            <a target="_blank" href="https://wa.me/5571996445095">Paripe <i class="fa-brands fa-whatsapp"></i></a>
+            <a target="_blank" href="https://wa.me/5571997186795">Cajazeiras <i class="fa-brands fa-whatsapp"></i></a>
+            <a target="_blank" href="https://wa.me/5571999032041">Lauro de Freitas <i class="fa-brands fa-whatsapp"></i></a>
+            <a target="_blank" href="https://wa.me/5575983321570">Feira de Santana <i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </details>
+
+        <details>
+          <summary>Pernambuco (PE) <i class="fa-solid fa-chevron-down"></i></summary>
+          <div class="acc-content">
+            <a target="_blank" href="https://wa.me/5581992729743">Recife <i class="fa-brands fa-whatsapp"></i></a>
+            <a target="_blank" href="https://wa.me/5581984130737">Olinda <i class="fa-brands fa-whatsapp"></i></a>
+            <a target="_blank" href="https://wa.me/5581991438572">Vitória <i class="fa-brands fa-whatsapp"></i></a>
+            <a target="_blank" href="https://wa.me/5581991438572">Paulista <i class="fa-brands fa-whatsapp"></i></a>
+            <a target="_blank" href="https://wa.me/5581991438572">Cabo <i class="fa-brands fa-whatsapp"></i></a>
+            <a target="_blank" href="https://wa.me/5581999245735">Caruaru <i class="fa-brands fa-whatsapp"></i></a>
+            <a target="_blank" href="https://wa.me/5587981073260">Petrolina <i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </details>
+
+        <details>
+          <summary>Alagoas (AL) <i class="fa-solid fa-chevron-down"></i></summary>
+          <div class="acc-content">
+            <a target="_blank" href="https://wa.me/5582988842102">Maceió <i class="fa-brands fa-whatsapp"></i></a>
+            <a target="_blank" href="https://wa.me/5582987940170">Arapiraca <i class="fa-brands fa-whatsapp"></i></a>
+            <a target="_blank" href="https://wa.me/5582991869669">Marechal <i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </details>
+
+        <details>
+          <summary>Sergipe (SE) <i class="fa-solid fa-chevron-down"></i></summary>
+          <div class="acc-content">
+            <a target="_blank" href="https://wa.me/5579981487491">Aracaju <i class="fa-brands fa-whatsapp"></i></a>
+            <a target="_blank" href="https://wa.me/5579999922762">Itabaiana <i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </details>
+
+        <details>
+          <summary>Paraíba (PB) <i class="fa-solid fa-chevron-down"></i></summary>
+          <div class="acc-content">
+            <a target="_blank" href="https://wa.me/5583981447863">João Pessoa <i class="fa-brands fa-whatsapp"></i></a>
+            <a target="_blank" href="https://wa.me/5583993507669">Santa Rita <i class="fa-brands fa-whatsapp"></i></a>
+            <a target="_blank" href="https://wa.me/5583996925983">Campina Grande <i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </details>
+
+        <details>
+          <summary>Rio Grande do Norte (RN) <i class="fa-solid fa-chevron-down"></i></summary>
+          <div class="acc-content">
+            <a target="_blank" href="https://wa.me/5584991070550">Natal <i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </details>
+
+        <details>
+          <summary>Ceará (CE) <i class="fa-solid fa-chevron-down"></i></summary>
+          <div class="acc-content">
+            <a target="_blank" href="https://wa.me/5585984363748">Fortaleza <i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+  <div id="overlay" class="overlay" onclick="toggleMenu()"></div>
+
+  <section id="inicio" class="hero bg-hero">
+    <div class="hero-overlay">
+      <div class="hero-text-box">
+        <h2>O Acabamento Perfeito Que Seu Ambiente Merece</h2>
+        <p>Forros em PVC amadeirados e modernos com instalação rápida, durabilidade extrema e sofisticação inigualável.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="sobre">
+    <div class="container text-center">
+      <h2>Desde 2021 Elevando Padrões</h2>
+      <div class="bar-yellow"></div>
+      <p class="text-elaborado">
+        A <strong>Star Forros</strong> nasceu com o propósito de transformar a construção civil brasileira. O que começou como uma busca pela excelência técnica se consolidou em uma operação de escala nacional, focada em entregar acabamentos que elevam o valor de mercado de qualquer imóvel. Acreditamos que o teto é a alma do design; por isso, trabalhamos exclusivamente com materiais de alta performance, garantindo uma instalação limpa, rápida e com durabilidade medida em décadas.
+      </p>
+    </div>
+  </section>
+
+  <section id="destaques" class="destaques">
+    <div class="overlay-light">
+      <div class="container text-center">
+        <h2>Nossas Especialidades</h2>
+        <div class="bar-yellow"></div>
+        <div class="cards-wrapper">
+          <div class="feature-card">
+            <img src="Imagens/PHOTO-2025-10-01-13-28-48.jpg" alt="Salas Modernas">
+            <div class="card-txt"><h3>Salas Modernas</h3><p>Estilo e iluminação integrada.</p></div>
+          </div>
+          <div class="feature-card">
+            <img src="Imagens/PHOTO-2025-11-22-09-53-27.jpg" alt="Áreas Gourmet">
+            <div class="card-txt"><h3>Áreas Gourmet</h3><p>Resistência e fácil limpeza.</p></div>
+          </div>
+          <div class="feature-card">
+            <img src="Imagens/PHOTO-2026-03-04-15-23-09.jpg" alt="Varandas">
+            <div class="card-txt"><h3>Varandas e Garagens</h3><p>Durabilidade extrema ao tempo.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container text-center">
+    <p>Não trabalhamos apenas com forros, entregamos renovação estética. Veja abaixo como a teoria se torna prática em projetos executados pela nossa equipe em todo o Brasil.</p>
+  </div>
+
+  <section id="projetos" class="galeria">
+    <div class="container text-center">
+      <h2>Acompanhe nossos projetos</h2>
+      <div class="bar-yellow"></div>
+      
+      <div class="filter-btns">
+        <button class="btn-f ativo" onclick="filtrar('todos')">Todos</button>
+        <button class="btn-f" onclick="filtrar('branco')">PVC Branco</button>
+        <button class="btn-f" onclick="filtrar('cerejeira')">Cerejeira</button>
+        <button class="btn-f" onclick="filtrar('nogueira')">Nogueira</button>
+        <button class="btn-f" onclick="filtrar('mogno')">Mogno</button>
+      </div>
+
+      <div class="grid-compacto">
+        <div class="gal-item branco"><img src="Imagens/5.jpg" alt="Branco"></div>
+        <div class="gal-item branco"><img src="Imagens/e01190f2-c8b8-497f-9c6b-86c23416ed88.jpeg" alt="Branco"></div>
+        <div class="gal-item branco"><img src="Imagens/PHOTO-2025-10-31-09-56-00.jpg" alt="Branco"></div>
+
+        <div class="gal-item cerejeira"><img src="Imagens/PHOTO-2025-10-01-13-28-48.jpg" alt="Cerejeira"></div>
+        <div class="gal-item cerejeira"><img src="Imagens/PHOTO-2025-11-25-17-49-16.jpg" alt="Cerejeira"></div>
+        <div class="gal-item cerejeira" style="display:none;"><img src="Imagens/PHOTO-2025-10-16-11-36-29.jpg" alt="Cerejeira"></div>
+
+        <div class="gal-item nogueira"><img src="Imagens/PHOTO-2026-03-04-15-23-09.jpg" alt="Nogueira"></div>
+        <div class="gal-item nogueira"><img src="Imagens/PHOTO-2026-03-17-08-57-34.jpg" alt="Nogueira"></div>
+        <div class="gal-item nogueira"><img src="Imagens/WhatsApp Image 2026-04-01 at 13.55.09.jpeg" alt="Nogueira"></div>
+
+        <div class="gal-item mogno"><img src="Imagens/PHOTO-2025-10-15-08-21-11.jpg" alt="Mogno"></div>
+        <div class="gal-item mogno"><img src="Imagens/PHOTO-2025-11-03-09-28-48.jpg" alt="Mogno"></div>
+        <div class="gal-item mogno"><img src="Imagens/PHOTO-2026-02-20-09-21-59.jpg" alt="Mogno"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container text-center">
+    <p>O seu ambiente merece o padrão de elite da Star Forros. Transforme seu teto em uma peça de design com quem é referência nacional em acabamento premium</p>
+  </div>
+
+  <footer class="footer-final">
+    <div class="container footer-grid">
+      
+      <div class="foot-col">
+        <h4>Star Forros</h4>
+        <p>A Maior do Brasil</p>
+      </div>
+
+      <div class="foot-col">
+        <p>Clique no icone do whatsapp, e entre em contato com a loja mais próxima para solicitar seu orçamento.</p>
+        <img src="Imagens/logo%20star.jpg" class="foot-logo">
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+        </ul>
+      </div>
+
+      <div class="foot-col">
+        <h4>Social</h4>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/star_forrossv?igsh=MXhxNDJscmh6bmk1cw==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" onclick="toggleMenu()"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      
+    </div>
+    <div class="copyright">
+      <p>&copy; 2026 Star Forros. A Maior do Brasil. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <div class="floating">
+    <a href="https://www.instagram.com/star_forrossv?igsh=MXhxNDJscmh6bmk1cw==" target="_blank" class="f-btn f-insta">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+    <button class="f-btn f-whats" onclick="toggleMenu()">
+      <i class="fa-brands fa-whatsapp"></i>
+    </button>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('side-menu').classList.toggle('active');
+      document.getElementById('overlay').classList.toggle('active');
+    }
+
+    function filtrar(cat) {
+      const btns = document.querySelectorAll('.btn-f');
+      btns.forEach(b => b.classList.remove('ativo'));
+      
+      const btnClicado = Array.from(btns).find(b => b.getAttribute('onclick').includes(cat));
+      if (btnClicado) btnClicado.classList.add('ativo');
+
+      const itens = document.querySelectorAll('.gal-item');
+      
+      if (cat === 'todos') {
+        let contagem = { branco: 0, cerejeira: 0, nogueira: 0, mogno: 0 };
+        
+        itens.forEach(item => {
+          let mostrado = false;
+          for (let classe in contagem) {
+            if (item.classList.contains(classe)) {
+              if (contagem[classe] < 2) {
+                item.style.display = 'block';
+                contagem[classe]++;
+                mostrado = true;
+              }
+              break; 
+            }
+          }
+          if (!mostrado) item.style.display = 'none';
+        });
+      } else {
+        itens.forEach(item => {
+          if (item.classList.contains(cat)) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      }
+    }
+    
+    window.onload = () => filtrar('todos');
+  </script>
+</body>
+</html>
