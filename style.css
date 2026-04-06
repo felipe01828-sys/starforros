@@ -416,9 +416,7 @@ body { background: var(--navy); color: var(--text); overflow-x: hidden; }
     gap: 36px;
     text-align: center;
   }
-  .foot-col { display: flex; flex-direction: column; align-items: center; }
-  .foot-logo { margin-bottom: 12px; }
-
+  
   /* Texto elaborado */
   .text-elaborado { font-size: 14px; }
 
@@ -478,3 +476,7 @@ body { background: var(--navy); color: var(--text); overflow-x: hidden; }
   max-width: 800px;
   margin: 0 auto;
 }
+
+.foot-col { display: flex; flex-direction: column; align-items: center; }
+  .foot-logo { margin-bottom: 150px; 
+  width: 120px; height: auto; }
