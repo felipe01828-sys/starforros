@@ -13,13 +13,13 @@
   <header class="navbar-slim">
     <div class="nav-container-slim">
       <div class="brand-central">
-        <img src="Imagens/logo%20star.jpg" alt="Logo Star Forros" class="nav-logo">
+        <img src="Imagens/Cópia de Design sem nome (1).png" alt="Logo Star Forros" class="nav-logo">
         <div class="brand-text">
           <h1>Star Forros</h1>
           <span>A Maior do Brasil</span>
         </div>
       </div>
-      <button class="hamburger" onclick="toggleMenu()">
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Abrir menu">
         <i class="fa-solid fa-bars"></i>
       </button>
     </div>
@@ -138,6 +138,7 @@
     <div class="container text-center">
       <h2>Desde 2021 Elevando Padrões</h2>
       <div class="bar-yellow"></div>
+      <img src="Imagens/Mapa da starforros(3).png" alt="Presença nacional" style="width: 280px; height: auto; margin: 20px auto; display: block;">
       <p class="text-elaborado">
         A <strong>Star Forros</strong> nasceu com o propósito de transformar a construção civil brasileira. O que começou como uma busca pela excelência técnica se consolidou em uma operação de escala nacional, focada em entregar acabamentos que elevam o valor de mercado de qualquer imóvel. Acreditamos que o teto é a alma do design; por isso, trabalhamos exclusivamente com materiais de alta performance, garantindo uma instalação limpa, rápida e com durabilidade medida em décadas.
       </p>
@@ -167,9 +168,15 @@
     </div>
   </section>
 
-  <div class="container text-center">
-    <p>Não trabalhamos apenas com forros, entregamos renovação estética. Veja abaixo como a teoria se torna prática em projetos executados pela nossa equipe em todo o Brasil.</p>
+  <!-- TEXTO TRANSIÇÃO 1 -->
+ <div class="transicao-video">
+  <video autoplay muted loop playsinline class="transicao-bg-video">
+    <source src="Imagens/WhatsApp Video 2026-04-06 at 11.25.05.mp4" type="video/mp4">
+  </video>
+  <div class="transicao-conteudo">
+    <p>Na Star Forros, vamos além da simples venda de forros: entregamos transformação estética, valorização de ambientes e experiências que elevam o padrão de cada projeto. Acreditamos que cada espaço tem potencial para se reinventar, e é exatamente isso que fazemos todos os dias, em diferentes regiões do Brasil.</p>
   </div>
+</div>
 
   <section id="projetos" class="galeria">
     <div class="container text-center">
@@ -184,41 +191,46 @@
         <button class="btn-f" onclick="filtrar('mogno')">Mogno</button>
       </div>
 
-      <div class="grid-compacto">
-        <div class="gal-item branco"><img src="Imagens/5.jpg" alt="Branco"></div>
-        <div class="gal-item branco"><img src="Imagens/e01190f2-c8b8-497f-9c6b-86c23416ed88.jpeg" alt="Branco"></div>
-        <div class="gal-item branco"><img src="Imagens/PHOTO-2025-10-31-09-56-00.jpg" alt="Branco"></div>
+     <div class="grid-compacto">
+  <div class="gal-item branco"><img src="Imagens/5.jpg" alt="Branco"></div>
+  <div class="gal-item branco"><img src="Imagens/PHOTO-2025-10-31-09-56-00.jpg" alt="Branco"></div>
+  <div class="gal-item branco extra"><img src="Imagens/e01190f2-c8b8-497f-9c6b-86c23416ed88.jpeg" alt="Branco"></div>
 
-        <div class="gal-item cerejeira"><img src="Imagens/PHOTO-2025-10-01-13-28-48.jpg" alt="Cerejeira"></div>
-        <div class="gal-item cerejeira"><img src="Imagens/PHOTO-2025-11-25-17-49-16.jpg" alt="Cerejeira"></div>
-        <div class="gal-item cerejeira" style="display:none;"><img src="Imagens/PHOTO-2025-10-16-11-36-29.jpg" alt="Cerejeira"></div>
+  <div class="gal-item cerejeira"><img src="Imagens/PHOTO-2025-10-01-13-28-48.jpg" alt="Cerejeira"></div>
+  <div class="gal-item cerejeira"><img src="Imagens/PHOTO-2025-11-25-17-49-16.jpg" alt="Cerejeira"></div>
+  <div class="gal-item cerejeira extra"><img src="Imagens/PHOTO-2025-10-16-11-36-29.jpg" alt="Cerejeira"></div>
 
-        <div class="gal-item nogueira"><img src="Imagens/PHOTO-2026-03-04-15-23-09.jpg" alt="Nogueira"></div>
-        <div class="gal-item nogueira"><img src="Imagens/PHOTO-2026-03-17-08-57-34.jpg" alt="Nogueira"></div>
-        <div class="gal-item nogueira"><img src="Imagens/WhatsApp Image 2026-04-01 at 13.55.09.jpeg" alt="Nogueira"></div>
+  <div class="gal-item nogueira"><img src="Imagens/PHOTO-2026-03-04-15-23-09.jpg" alt="Nogueira"></div>
+  <div class="gal-item nogueira"><img src="Imagens/PHOTO-2026-03-17-08-57-34.jpg" alt="Nogueira"></div>
+  <div class="gal-item nogueira extra"><img src="Imagens/WhatsApp Image 2026-04-01 at 13.55.09.jpeg" alt="Nogueira"></div>
 
-        <div class="gal-item mogno"><img src="Imagens/PHOTO-2025-10-15-08-21-11.jpg" alt="Mogno"></div>
-        <div class="gal-item mogno"><img src="Imagens/PHOTO-2025-11-03-09-28-48.jpg" alt="Mogno"></div>
-        <div class="gal-item mogno"><img src="Imagens/PHOTO-2026-02-20-09-21-59.jpg" alt="Mogno"></div>
-      </div>
+  <div class="gal-item mogno"><img src="Imagens/PHOTO-2025-10-15-08-21-11.jpg" alt="Mogno"></div>
+  <div class="gal-item mogno"><img src="Imagens/PHOTO-2025-11-03-09-28-48.jpg" alt="Mogno"></div>
+  <div class="gal-item mogno extra"><img src="Imagens/PHOTO-2025-11-13-15-41-25.jpg" alt="Mogno"></div>
+</div>
     </div>
   </section>
 
+  <!-- TEXTO TRANSIÇÃO 2 -->
   <div class="container text-center">
-    <p>O seu ambiente merece o padrão de elite da Star Forros. Transforme seu teto em uma peça de design com quem é referência nacional em acabamento premium</p>
+    <p>Seu ambiente merece mais do que um simples acabamento — merece o padrão de excelência da Star Forros. Transforme seu teto em uma verdadeira peça de design, com quem é referência nacional em acabamento premium, unindo sofisticação, durabilidade e tecnologia em cada detalhe.</p>
   </div>
 
-  <footer class="footer-final">
+   <footer class="footer-final">
+    
+    <div class="container footer-top">
+      <img src="Imagens/Cópia de Design sem nome (1).png" class="foot-logo" alt="Logo Star Forros">
+      <p>Clique no ícone do WhatsApp e entre em contato com a loja mais próxima para solicitar seu orçamento.</p>
+    </div>
+
     <div class="container footer-grid">
       
       <div class="foot-col">
-        <h4>Star Forros</h4>
-        <p>A Maior do Brasil</p>
+        <h4>SAC</h4>
+        <p>Sac@starforros.com.br</p>
       </div>
 
       <div class="foot-col">
-        <p>Clique no icone do whatsapp, e entre em contato com a loja mais próxima para solicitar seu orçamento.</p>
-        <img src="Imagens/logo%20star.jpg" class="foot-logo">
         <h4>Menu</h4>
         <ul>
           <li><a href="#inicio">Início</a></li>
@@ -230,70 +242,74 @@
       <div class="foot-col">
         <h4>Social</h4>
         <div class="social-icons">
-          <a href="https://www.instagram.com/star_forrossv?igsh=MXhxNDJscmh6bmk1cw==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#" onclick="toggleMenu()"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/star_forrossv?igsh=MXhxNDJscmh6bmk1cw==" target="_blank" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" onclick="toggleMenu(); return false;" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
         </div>
       </div>
       
     </div>
+    
     <div class="copyright">
       <p>&copy; 2026 Star Forros. A Maior do Brasil. Todos os direitos reservados.</p>
     </div>
   </footer>
 
   <div class="floating">
-    <a href="https://www.instagram.com/star_forrossv?igsh=MXhxNDJscmh6bmk1cw==" target="_blank" class="f-btn f-insta">
+    <a href="https://www.instagram.com/star_forrossv?igsh=MXhxNDJscmh6bmk1cw==" target="_blank" class="f-btn f-insta" aria-label="Instagram">
       <i class="fa-brands fa-instagram"></i>
     </a>
-    <button class="f-btn f-whats" onclick="toggleMenu()">
+    <button class="f-btn f-whats" onclick="toggleMenu()" aria-label="WhatsApp">
       <i class="fa-brands fa-whatsapp"></i>
     </button>
   </div>
 
   <script>
-    function toggleMenu() {
-      document.getElementById('side-menu').classList.toggle('active');
-      document.getElementById('overlay').classList.toggle('active');
-    }
+  function toggleMenu() {
+    document.getElementById('side-menu').classList.toggle('active');
+    document.getElementById('overlay').classList.toggle('active');
+  }
 
-    function filtrar(cat) {
-      const btns = document.querySelectorAll('.btn-f');
-      btns.forEach(b => b.classList.remove('ativo'));
-      
-      const btnClicado = Array.from(btns).find(b => b.getAttribute('onclick').includes(cat));
-      if (btnClicado) btnClicado.classList.add('ativo');
+  function filtrar(cat) {
+    const btns = document.querySelectorAll('.btn-f');
+    btns.forEach(b => b.classList.remove('ativo'));
 
-      const itens = document.querySelectorAll('.gal-item');
-      
-      if (cat === 'todos') {
-        let contagem = { branco: 0, cerejeira: 0, nogueira: 0, mogno: 0 };
-        
-        itens.forEach(item => {
-          let mostrado = false;
-          for (let classe in contagem) {
-            if (item.classList.contains(classe)) {
-              if (contagem[classe] < 2) {
-                item.style.display = 'block';
-                contagem[classe]++;
-                mostrado = true;
-              }
-              break; 
+    const btnClicado = Array.from(btns).find(b => b.getAttribute('onclick').includes(cat));
+    if (btnClicado) btnClicado.classList.add('ativo');
+
+    const itens = document.querySelectorAll('.gal-item');
+
+    if (cat === 'todos') {
+      let contagem = { branco: 0, cerejeira: 0, nogueira: 0, mogno: 0 };
+      itens.forEach(item => {
+        // Itens "extra" ficam ocultos no Todos
+        if (item.classList.contains('extra')) {
+          item.style.display = 'none';
+          return;
+        }
+        let mostrado = false;
+        for (let classe in contagem) {
+          if (item.classList.contains(classe)) {
+            if (contagem[classe] < 2) {
+              item.style.display = 'block';
+              contagem[classe]++;
+              mostrado = true;
             }
+            break;
           }
-          if (!mostrado) item.style.display = 'none';
-        });
-      } else {
-        itens.forEach(item => {
-          if (item.classList.contains(cat)) {
-            item.style.display = 'block';
-          } else {
-            item.style.display = 'none';
-          }
-        });
-      }
+        }
+        if (!mostrado) item.style.display = 'none';
+      });
+    } else {
+      itens.forEach(item => {
+        item.style.display = item.classList.contains(cat) ? 'block' : 'none';
+      });
     }
-    
-    window.onload = () => filtrar('todos');
-  </script>
+  }
+ window.onload = () => filtrar('todos');
+</script>
 </body>
 </html>
