@@ -435,8 +435,8 @@ body { background: var(--navy); color: var(--text); overflow-x: hidden; }
 
 .btn-f {
   background: none; border: 1px solid rgba(255,255,255,0.15);
-  color: white; padding: 7px 16px; border-radius: 20px;
-  cursor: pointer; transition: 0.3s; font-size: 13px;
+  color: white; padding: 15px 25px; border-radius: 20px;
+  cursor: pointer; transition: 0.5s; font-size: 25px;
   white-space: nowrap;
 }
 
@@ -480,3 +480,124 @@ body { background: var(--navy); color: var(--text); overflow-x: hidden; }
 .foot-col { display: flex; flex-direction: column; align-items: center; }
   .foot-logo { margin-bottom: 150px; 
   width: 120px; height: auto; }
+
+
+ /* --- ANIMAÇÃO DE REVELAR AO ROLAR (REVEAL) --- */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.5s ease-out, transform 2.0s ease-out;
+}
+
+.reveal.visivel {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Ajuste específico para a galeria não bugar no celular */
+.gal-item {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.5s ease-out, transform 2.0s ease-out;
+}
+
+.gal-item.visivel {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- ANIMAÇÃO DAS CAIXAS COM ATRASO (ESCADA) --- */
+.feature-card.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  /* Tempo total da subida (ajuste o 1.2s se quiser mais lento ou rápido) */
+  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+/* Quando elas ficarem visíveis... */
+.feature-card.reveal.visivel {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ATRASOS: O segredo está aqui */
+.feature-card.reveal:nth-child(1) { transition-delay: 0s; }    /* Primeira: imediato */
+.feature-card.reveal:nth-child(2) { transition-delay: 0.3s; }  /* Segunda: espera 0.3s */
+.feature-card.reveal:nth-child(3) { transition-delay: 0.6s; }  /* Terceira: espera 0.6s */
+
+/* --- SEQUÊNCIA DE ATRASOS PARA 13 FOTOS --- */
+.gal-item:nth-child(1)  { transition-delay: 0.0s; }
+.gal-item:nth-child(2)  { transition-delay: 0.16s; }
+.gal-item:nth-child(3)  { transition-delay: 0.24s; }
+.gal-item:nth-child(4)  { transition-delay: 0.32s; }
+.gal-item:nth-child(5)  { transition-delay: 0.40s; }
+.gal-item:nth-child(6)  { transition-delay: 0.48s; }
+.gal-item:nth-child(7)  { transition-delay: 0.56s; }
+.gal-item:nth-child(8)  { transition-delay: 0.64s; }
+.gal-item:nth-child(9)  { transition-delay: 0.72s; }
+.gal-item:nth-child(10) { transition-delay: 0.80s; }
+.gal-item:nth-child(11) { transition-delay: 0.88s; }
+.gal-item:nth-child(12) { transition-delay: 0.96s; }
+.gal-item:nth-child(13) { transition-delay: 1.04s; }
+
+/* ========================================
+   ESTILO DO BOTÃO FLUTUANTE DO MAPS
+   ======================================== */
+
+/* 1. Dá a cor vermelha e garante que ele apareça */
+.f-maps { 
+  background-color: #EA4335 !important; /* Vermelho padrão do Google Maps */
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  order: 2; /* Fica entre o Insta e o Whats */
+}
+
+/* 2. Garante que o ícone (o "pin") seja branco e do tamanho certo */
+.f-maps i {
+  color: #ffffff !important;
+  font-size: 26px !important;
+  display: block !important;
+}
+
+/* 3. Organiza a "pilha" de botões para um não atropelar o outro */
+.floating {
+  display: flex;
+  flex-direction: column; /* Coloca um em cima do outro */
+  gap: 12px; /* Espaço entre as bolinhas */
+  z-index: 9999; /* Garante que fique na frente de tudo */
+}
+
+/* 4. Efeito de aumentar quando passa o mouse */
+.f-maps:hover {
+  transform: scale(1.1);
+  background-color: #d33426 !important; /* Um vermelho um pouco mais escuro no hover */
+}
+
+/* LINHA DE CIDADE COM ÍCONES */
+.city-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background: rgba(255,255,255,0.02);
+  border-radius: 5px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.city-icons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.city-icons a {
+  background: none !important;
+  padding: 0 !important;
+}
+
+.maps-icon {
+  color: #EA4335 !important;
+  font-size: 16px;
+}
