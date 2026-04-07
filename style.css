@@ -707,3 +707,15 @@ body { background: var(--navy); color: var(--text); overflow-x: hidden; }
   background: #ffd23f;
   color: #08101f;
 }
+.esconder {
+  display: none !important;
+}
+.botoes-flutuantes {
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.botoes-flutuantes.oculto {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
