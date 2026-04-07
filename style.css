@@ -35,7 +35,7 @@ body { background: var(--navy); color: var(--text); overflow-x: hidden; }
 .navbar-slim {
   position: fixed; top: 0; width: 100%; z-index: 9000;
   background: rgba(11, 9, 72, 0.97); backdrop-filter: blur(10px);
-  padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding: 25px 0; border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 .nav-container-slim {
@@ -48,7 +48,7 @@ body { background: var(--navy); color: var(--text); overflow-x: hidden; }
   display: flex; align-items: center; gap: 12px;
 }
 
-.nav-logo { height: 82px; border-radius: 0; object-fit: contain; }
+.nav-logo { height: 100px; border-radius: 0; object-fit: contain; }
 
 .brand-text h1 { font-size: 18px; color: var(--star-yellow); text-transform: uppercase; letter-spacing: 2px; line-height: 1.2; font-weight: 700; }
 .brand-text span { font-size: 11px; display: block; color: #aaa; letter-spacing: 1px; }
@@ -144,7 +144,8 @@ body { background: var(--navy); color: var(--text); overflow-x: hidden; }
    HERO
    ======================== */
 .hero {
-  min-height: 60vh; margin-top: 60px;
+  min-height: 60vh;
+  margin-top: 92px;
   background: url('Imagens/PHOTO-2025-11-03-09-28-48.jpg') center/cover no-repeat;
   position: relative;
 }
@@ -380,7 +381,7 @@ body { background: var(--navy); color: var(--text); overflow-x: hidden; }
 @media (max-width: 600px) {
   /* Navbar */
   .brand-text h1 { font-size: 15px; }
-  .nav-logo { height: 40px; }
+  .nav-logo { height: 60px; }
 
   /* Side menu */
   .side-menu { width: 88vw; max-width: 320px; }
@@ -601,3 +602,30 @@ body { background: var(--navy); color: var(--text); overflow-x: hidden; }
   color: #EA4335 !important;
   font-size: 16px;
 }
+
+.footer-btns {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.footer-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.btn-wpp  { background: #25D366; }
+.btn-insta { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+.btn-maps  { background: #EA4335; }
+
+.footer-btn:hover { transform: scale(1.05); opacity: 0.9; }
