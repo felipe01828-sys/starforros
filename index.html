@@ -36,6 +36,117 @@
         <li><a href="#sobre" onclick="toggleMenu()">Sobre a Star Forros</a></li>
         <li><a href="#destaques" onclick="toggleMenu()">Especialidades</a></li>
         <li><a href="#projetos" onclick="toggleMenu()">Galeria</a></li>
+      <li class="menu-localizacao">
+  <button class="btn-localizacao" type="button" onclick="toggleEstados()">
+    Onde estamos localizados
+    <span id="seta-localizacao">▼</span>
+  </button>
+
+  <div class="box-estados" id="boxEstados">
+    <div class="estado-item">
+      <button class="estado-btn" type="button" onclick="toggleEstado('sp')">
+        São Paulo (SP)
+        <span>▼</span>
+      </button>
+      <div class="cidades-lista" id="sp">
+        <a href="https://share.google/RBI6iw28csZpmHg2t" target="_blank">São Vicente</a>
+        <a href="https://share.google/JglDtJdwFMxdEZ4Ls" target="_blank">Carapicuíba</a>
+        <a href="https://share.google/MJFRSXHrNNitk63Fm" target="_blank">São José dos Campos</a>
+        <a href="https://share.google/3weSu3dcovvV2GMW7" target="_blank">Guarulhos</a>
+        <a href="https://share.google/fm0DvEFPn70tGHary" target="_blank">Jundiaí</a>
+        <a href="https://share.google/5c6EaTcjHgL9KX2Bf" target="_blank">Itaquaquecetuba</a>
+        <a href="https://share.google/PZD0qUkRkOK7D28ea" target="_blank">Campinas</a>
+        <a href="https://share.google/wtM3MM7iB24kxQthq" target="_blank">Salto</a>
+        <a href="https://share.google/RR8bNSXzdFOpZlXQB" target="_blank">Caieiras</a>
+      </div>
+    </div>
+
+    <div class="estado-item">
+      <button class="estado-btn" type="button" onclick="toggleEstado('ba')">
+        Bahia (BA)
+        <span>▼</span>
+      </button>
+      <div class="cidades-lista" id="ba">
+        <a href="https://share.google/OBh1SGeM5Wd9bfQI9" target="_blank">Salvador</a>
+        <a href="https://share.google/5FrsXeQMC2kpTqEsQ" target="_blank">Camaçari</a>
+        <a href="https://share.google/oZDhzpfDW6mf4ZbNH" target="_blank">Feira de Santana</a>
+        <a href="https://share.google/28I71y38312i6i6e4" target="_blank">Lauro de Freitas</a>
+        <a href="https://share.google/cslwGLYIkfwXNxMIn" target="_blank">Cajazeiras</a>
+        <a href="https://share.google/oTRsmMdsPPAfNi9E3" target="_blank">Paripe</a>
+      </div>
+    </div>
+
+    <div class="estado-item">
+      <button class="estado-btn" type="button" onclick="toggleEstado('pe')">
+        Pernambuco (PE)
+        <span>▼</span>
+      </button>
+      <div class="cidades-lista" id="pe">
+        <a href="https://share.google/fvUzWQMuBSbYmFUZg" target="_blank">Recife</a>
+        <a href="https://share.google/jZLLJfDfkeDmeiOM7" target="_blank">Caruaru</a>
+        <a href="https://share.google/VzTyWVgenWzjKY7bt" target="_blank">Olinda</a>
+        <a href="https://share.google/6rLSR5EjaJEsdCpXw" target="_blank">Paulista</a>
+        <a href="https://share.google/ETsxdlvdxFXiTWwog" target="_blank">Cabo</a>
+        <a href="https://share.google/qS8qENwPuRa7fYj5e" target="_blank">Vitória de Santo Antão</a>
+      </div>
+    </div>
+
+    <div class="estado-item">
+      <button class="estado-btn" type="button" onclick="toggleEstado('al')">
+        Alagoas (AL)
+        <span>▼</span>
+      </button>
+      <div class="cidades-lista" id="al">
+        <a href="https://share.google/IFqV8ALtV2OPZHX04" target="_blank">Marechal</a>
+        <a href="https://share.google/K3mfYa1D7ZgdHc86d" target="_blank">Maceió</a>
+        <a href="https://share.google/zfF6X3Ttr4f9NZcVz" target="_blank">Arapiraca</a>
+      </div>
+    </div>
+
+    <div class="estado-item">
+      <button class="estado-btn" type="button" onclick="toggleEstado('se')">
+        Sergipe (SE)
+        <span>▼</span>
+      </button>
+      <div class="cidades-lista" id="se">
+        <a href="https://share.google/KRC1F89ZywfV5eKsL" target="_blank">Aracaju</a>
+        <a href="https://share.google/bLAJkvf53wLOOiX53" target="_blank">Itabaiana</a>
+      </div>
+    </div>
+
+    <div class="estado-item">
+      <button class="estado-btn" type="button" onclick="toggleEstado('pb')">
+        Paraíba (PB)
+        <span>▼</span>
+      </button>
+      <div class="cidades-lista" id="pb">
+        <a href="https://share.google/1OvZVgSJWDXvA08bL" target="_blank">João Pessoa</a>
+        <a href="https://share.google/Ksk7dxZTa7DfPYtpM" target="_blank">Campina Grande</a>
+        <a href="https://share.google/nNKDWNj2wTjrvhGcZ" target="_blank">Santa Rita</a>
+      </div>
+    </div>
+
+    <div class="estado-item">
+      <button class="estado-btn" type="button" onclick="toggleEstado('rn')">
+        Rio Grande do Norte (RN)
+        <span>▼</span>
+      </button>
+      <div class="cidades-lista" id="rn">
+        <a href="https://share.google/uleK9kdw0awWcbqk3" target="_blank">Natal</a>
+      </div>
+    </div>
+
+    <div class="estado-item">
+      <button class="estado-btn" type="button" onclick="toggleEstado('ce')">
+        Ceará (CE)
+        <span>▼</span>
+      </button>
+      <div class="cidades-lista" id="ce">
+        <a href="https://share.google/uC7gApj8H63jZGObL" target="_blank">Fortaleza</a>
+      </div>
+    </div>
+  </div>
+</li>
       </ul>
       <div class="divider"></div>
       <h3 class="side-title">Central de Atendimento</h3>
@@ -126,6 +237,7 @@
     </div>
   </div>
   <div id="overlay" class="overlay" onclick="toggleMenu()"></div>
+  
 
   <section id="inicio" class="hero bg-hero">
     <div class="hero-overlay">
@@ -335,6 +447,16 @@
   document.querySelectorAll('.gal-item, .reveal').forEach(el => {
     observer.observe(el);
   });
+
+   function toggleEstados() {
+    const box = document.getElementById("boxEstados");
+    box.classList.toggle("ativo");
+  }
+
+  function toggleEstado(id) {
+    const estado = document.getElementById(id);
+    estado.classList.toggle("ativa");
+  }
   </script>
 </body>
 </html>
