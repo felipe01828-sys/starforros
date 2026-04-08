@@ -355,3 +355,6 @@ body { background: var(--navy); color: var(--text); overflow-x: hidden; }
   text-decoration: none !important;
   border: none;
 }
+.maps-icon {
+  display: none !important;
+}
