@@ -10,6 +10,7 @@
 </head>
 <body>
 
+  <!-- ========== NAVBAR ========== -->
   <header class="navbar-slim">
     <div class="nav-container-slim">
       <div class="brand-central">
@@ -25,220 +26,220 @@
     </div>
   </header>
 
+  <!-- ========== SIDE MENU ========== -->
   <div id="side-menu" class="side-menu">
     <div class="side-menu-header">
       <span>Navegação</span>
       <button class="close-btn" onclick="toggleMenu()"><i class="fa-solid fa-xmark"></i></button>
     </div>
+
     <div class="side-menu-content">
       <ul class="nav-links-side">
         <li><a href="#inicio" onclick="toggleMenu()">Início</a></li>
         <li><a href="#sobre" onclick="toggleMenu()">Sobre a Star Forros</a></li>
         <li><a href="#destaques" onclick="toggleMenu()">Especialidades</a></li>
         <li><a href="#projetos" onclick="toggleMenu()">Galeria</a></li>
-      <li class="menu-localizacao">
- 
+      </ul>
+
       <div class="divider"></div>
-      <h3 class="side-title">Central de Atendimento</h3>
-      
-      <div class="accordion">
 
-        <details id="estado-sp">
-          <summary>São Paulo (SP) <i class="fa-solid fa-chevron-down"></i></summary>
-          <div class="acc-content">
-            <div class="city-row"><span>Caieiras</span><div class="city-icons"><a target="_blank" href="https://share.google/IFqV8ALtV2OPZHX04"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5511910854257"><i class="fa-brands fa-whatsapp"></i></a></div></div>
-            <div class="city-row"><span>Guarulhos</span><div class="city-icons"><a target="_blank" href="https://share.google/K3mfYa1D7ZgdHc86d"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5511912580468"><i class="fa-brands fa-whatsapp"></i></a></div></div>
-            <div class="city-row"><span>Itaquaquecetuba</span><div class="city-icons"><a target="_blank" href="https://share.google/zfF6X3Ttr4f9NZcVz"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5511930214430"><i class="fa-brands fa-whatsapp"></i></a></div></div>
-            <div class="city-row"><span>Carapicuíba</span><div class="city-icons"><a target="_blank" href="https://share.google/fvUzWQMuBSbYmFUZg"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5511930972222"><i class="fa-brands fa-whatsapp"></i></a></div></div>
-            <div class="city-row"><span>Salto</span><div class="city-icons"><a target="_blank" href="https://share.google/jZLLJfDfkeDmeiOM7"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5511986521786"><i class="fa-brands fa-whatsapp"></i></a></div></div>
-            <div class="city-row"><span>Jundiaí</span><div class="city-icons"><a target="_blank" href="https://share.google/VzTyWVgenWzjKY7bt"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5511996742861"><i class="fa-brands fa-whatsapp"></i></a></div></div>
-            <div class="city-row"><span>S. José dos Campos</span><div class="city-icons"><a target="_blank" href="https://share.google/6rLSR5EjaJEsdCpXw"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5512997153562"><i class="fa-brands fa-whatsapp"></i></a></div></div>
-            <div class="city-row"><span>São Vicente</span><div class="city-icons"><a target="_blank" href="https://share.google/ETsxdlvdxFXiTWwog"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5513996442483"><i class="fa-brands fa-whatsapp"></i></a></div></div>
-            <div class="city-row"><span>Campinas</span><div class="city-icons"><a target="_blank" href="https://share.google/qS8qENwPuRa7fYj5e"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5519971516669"><i class="fa-brands fa-whatsapp"></i></a></div></div>
+      <!-- CENTRAL DE ATENDIMENTO -->
+      <button class="btn-secao" type="button" onclick="toggleSecao('boxCentral', 'seta-central')">
+        CENTRAL DE ATENDIMENTO
+        <span id="seta-central">▼</span>
+      </button>
+
+      <div class="box-estados" id="boxCentral">
+
+        <!-- SP -->
+        <div class="estado-item">
+          <button class="estado-btn" onclick="toggleEstado('cat-sp')">São Paulo (SP) <span>▼</span></button>
+          <div class="cidades-lista" id="cat-sp">
+            <div class="city-row"><span>Caieiras</span><div class="city-icons"><a target="_blank" href="https://share.google/IFqV8ALtV2OPZHX04"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5511910854257"><i class="fa-brands fa-whatsapp wpp-icon"></i></a></div></div>
+            <div class="city-row"><span>Guarulhos</span><div class="city-icons"><a target="_blank" href="https://share.google/K3mfYa1D7ZgdHc86d"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5511912580468"><i class="fa-brands fa-whatsapp wpp-icon"></i></a></div></div>
+            <div class="city-row"><span>Itaquaquecetuba</span><div class="city-icons"><a target="_blank" href="https://share.google/zfF6X3Ttr4f9NZcVz"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5511930214430"><i class="fa-brands fa-whatsapp wpp-icon"></i></a></div></div>
+            <div class="city-row"><span>Carapicuíba</span><div class="city-icons"><a target="_blank" href="https://share.google/fvUzWQMuBSbYmFUZg"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5511930972222"><i class="fa-brands fa-whatsapp wpp-icon"></i></a></div></div>
+            <div class="city-row"><span>Salto</span><div class="city-icons"><a target="_blank" href="https://share.google/jZLLJfDfkeDmeiOM7"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5511986521786"><i class="fa-brands fa-whatsapp wpp-icon"></i></a></div></div>
+            <div class="city-row"><span>Jundiaí</span><div class="city-icons"><a target="_blank" href="https://share.google/VzTyWVgenWzjKY7bt"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5511996742861"><i class="fa-brands fa-whatsapp wpp-icon"></i></a></div></div>
+            <div class="city-row"><span>S. José dos Campos</span><div class="city-icons"><a target="_blank" href="https://share.google/6rLSR5EjaJEsdCpXw"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5512997153562"><i class="fa-brands fa-whatsapp wpp-icon"></i></a></div></div>
+            <div class="city-row"><span>São Vicente</span><div class="city-icons"><a target="_blank" href="https://share.google/ETsxdlvdxFXiTWwog"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5513996442483"><i class="fa-brands fa-whatsapp wpp-icon"></i></a></div></div>
+            <div class="city-row"><span>Campinas</span><div class="city-icons"><a target="_blank" href="https://share.google/qS8qENwPuRa7fYj5e"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5519971516669"><i class="fa-brands fa-whatsapp wpp-icon"></i></a></div></div>
           </div>
-        </details>
+        </div>
 
-        <details id="estado-ba">
-          <summary>Bahia (BA) <i class="fa-solid fa-chevron-down"></i></summary>
-          <div class="acc-content">
-            <div class="city-row"><span>Camaçari</span><div class="city-icons"><a target="_blank" href="https://share.google/OBh1SGeM5Wd9bfQI9"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5571984691941"><i class="fa-brands fa-whatsapp"></i></a></div></div>
-            <div class="city-row"><span>Pirajá</span><div class="city-icons"><a target="_blank" href="https://share.google/5FrsXeQMC2kpTqEsQ"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5571991367361"><i class="fa-brands fa-whatsapp"></i></a></div></div>
-            <div class="city-row"><span>Paripe</span><div class="city-icons"><a target="_blank" href="https://share.google/oZDhzpfDW6mf4ZbNH"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5571996445095"><i class="fa-brands fa-whatsapp"></i></a></div></div>
-            <div class="city-row"><span>Cajazeiras</span><div class="city-icons"><a target="_blank" href="https://share.google/28I71y38312i6i6e4"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5571997186795"><i class="fa-brands fa-whatsapp"></i></a></div></div>
-            <div class="city-row"><span>Lauro de Freitas</span><div class="city-icons"><a target="_blank" href="https://share.google/oZDhzpfDW6mf4ZbNH"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5571999032041"><i class="fa-brands fa-whatsapp"></i></a></div></div>
-            <div class="city-row"><span>Feira de Santana</span><div class="city-icons"><a target="_blank" href="https://share.google/cslwGLYIkfwXNxMIn"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5575983321570"><i class="fa-brands fa-whatsapp"></i></a></div></div>
+        <!-- BA -->
+        <div class="estado-item">
+          <button class="estado-btn" onclick="toggleEstado('cat-ba')">Bahia (BA) <span>▼</span></button>
+          <div class="cidades-lista" id="cat-ba">
+            <div class="city-row"><span>Camaçari</span><div class="city-icons"><a target="_blank" href="https://share.google/OBh1SGeM5Wd9bfQI9"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5571984691941"><i class="fa-brands fa-whatsapp wpp-icon"></i></a></div></div>
+            <div class="city-row"><span>Pirajá</span><div class="city-icons"><a target="_blank" href="https://share.google/5FrsXeQMC2kpTqEsQ"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5571991367361"><i class="fa-brands fa-whatsapp wpp-icon"></i></a></div></div>
+            <div class="city-row"><span>Paripe</span><div class="city-icons"><a target="_blank" href="https://share.google/oZDhzpfDW6mf4ZbNH"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5571996445095"><i class="fa-brands fa-whatsapp wpp-icon"></i></a></div></div>
+            <div class="city-row"><span>Cajazeiras</span><div class="city-icons"><a target="_blank" href="https://share.google/28I71y38312i6i6e4"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5571997186795"><i class="fa-brands fa-whatsapp wpp-icon"></i></a></div></div>
+            <div class="city-row"><span>Lauro de Freitas</span><div class="city-icons"><a target="_blank" href="https://share.google/oZDhzpfDW6mf4ZbNH"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5571999032041"><i class="fa-brands fa-whatsapp wpp-icon"></i></a></div></div>
+            <div class="city-row"><span>Feira de Santana</span><div class="city-icons"><a target="_blank" href="https://share.google/cslwGLYIkfwXNxMIn"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5575983321570"><i class="fa-brands fa-whatsapp wpp-icon"></i></a></div></div>
           </div>
-        </details>
+        </div>
 
-        <details id="estado-pe">
-          <summary>Pernambuco (PE) <i class="fa-solid fa-chevron-down"></i></summary>
-          <div class="acc-content">
-            <div class="city-row"><span>Recife</span><div class="city-icons"><a target="_blank" href="https://share.google/oTRsmMdsPPAfNi9E3"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5581992729743"><i class="fa-brands fa-whatsapp"></i></a></div></div>
-            <div class="city-row"><span>Olinda</span><div class="city-icons"><a target="_blank" href="https://share.google/1OvZVgSJWDXvA08bL"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5581984130737"><i class="fa-brands fa-whatsapp"></i></a></div></div>
-            <div class="city-row"><span>Vitória</span><div class="city-icons"><a target="_blank" href="https://share.google/Ksk7dxZTa7DfPYtpM"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5581991438572"><i class="fa-brands fa-whatsapp"></i></a></div></div>
-            <div class="city-row"><span>Paulista</span><div class="city-icons"><a target="_blank" href="https://share.google/nNKDWNj2wTjrvhGcZ"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5581991438572"><i class="fa-brands fa-whatsapp"></i></a></div></div>
-            <div class="city-row"><span>Cabo</span><div class="city-icons"><a target="_blank" href="https://share.google/KRC1F89ZywfV5eKsL"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5581991438572"><i class="fa-brands fa-whatsapp"></i></a></div></div>
-            <div class="city-row"><span>Caruaru</span><div class="city-icons"><a target="_blank" href="https://share.google/bLAJkvf53wLOOiX53"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5581999245735"><i class="fa-brands fa-whatsapp"></i></a></div></div>
-            <div class="city-row"><span>Petrolina</span><div class="city-icons"><a target="_blank" href="https://share.google/uleK9kdw0awWcbqk3"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5587981073260"><i class="fa-brands fa-whatsapp"></i></a></div></div>
+        <!-- PE -->
+        <div class="estado-item">
+          <button class="estado-btn" onclick="toggleEstado('cat-pe')">Pernambuco (PE) <span>▼</span></button>
+          <div class="cidades-lista" id="cat-pe">
+            <div class="city-row"><span>Recife</span><div class="city-icons"><a target="_blank" href="https://share.google/oTRsmMdsPPAfNi9E3"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5581992729743"><i class="fa-brands fa-whatsapp wpp-icon"></i></a></div></div>
+            <div class="city-row"><span>Olinda</span><div class="city-icons"><a target="_blank" href="https://share.google/1OvZVgSJWDXvA08bL"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5581984130737"><i class="fa-brands fa-whatsapp wpp-icon"></i></a></div></div>
+            <div class="city-row"><span>Vitória de Sto. Antão</span><div class="city-icons"><a target="_blank" href="https://share.google/Ksk7dxZTa7DfPYtpM"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5581991438572"><i class="fa-brands fa-whatsapp wpp-icon"></i></a></div></div>
+            <div class="city-row"><span>Paulista</span><div class="city-icons"><a target="_blank" href="https://share.google/nNKDWNj2wTjrvhGcZ"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5581991438572"><i class="fa-brands fa-whatsapp wpp-icon"></i></a></div></div>
+            <div class="city-row"><span>Cabo de Sto. Agostinho</span><div class="city-icons"><a target="_blank" href="https://share.google/KRC1F89ZywfV5eKsL"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5581991438572"><i class="fa-brands fa-whatsapp wpp-icon"></i></a></div></div>
+            <div class="city-row"><span>Caruaru</span><div class="city-icons"><a target="_blank" href="https://share.google/bLAJkvf53wLOOiX53"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5581999245735"><i class="fa-brands fa-whatsapp wpp-icon"></i></a></div></div>
+            <div class="city-row"><span>Petrolina</span><div class="city-icons"><a target="_blank" href="https://share.google/uleK9kdw0awWcbqk3"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5587981073260"><i class="fa-brands fa-whatsapp wpp-icon"></i></a></div></div>
           </div>
-        </details>
+        </div>
 
-        <details id="estado-al">
-          <summary>Alagoas (AL) <i class="fa-solid fa-chevron-down"></i></summary>
-          <div class="acc-content">
-            <div class="city-row"><span>Maceió</span><div class="city-icons"><a target="_blank" href="https://share.google/uC7gApj8H63jZGObL"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5582988842102"><i class="fa-brands fa-whatsapp"></i></a></div></div>
-            <div class="city-row"><span>Arapiraca</span><div class="city-icons"><a target="_blank" href="https://share.google/RBI6iw28csZpmHg2t"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5582987940170"><i class="fa-brands fa-whatsapp"></i></a></div></div>
-            <div class="city-row"><span>Marechal</span><div class="city-icons"><a target="_blank" href="https://share.google/JglDtJdwFMxdEZ4Ls"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5582991869669"><i class="fa-brands fa-whatsapp"></i></a></div></div>
+        <!-- AL -->
+        <div class="estado-item">
+          <button class="estado-btn" onclick="toggleEstado('cat-al')">Alagoas (AL) <span>▼</span></button>
+          <div class="cidades-lista" id="cat-al">
+            <div class="city-row"><span>Maceió</span><div class="city-icons"><a target="_blank" href="https://share.google/uC7gApj8H63jZGObL"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5582988842102"><i class="fa-brands fa-whatsapp wpp-icon"></i></a></div></div>
+            <div class="city-row"><span>Arapiraca</span><div class="city-icons"><a target="_blank" href="https://share.google/RBI6iw28csZpmHg2t"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5582987940170"><i class="fa-brands fa-whatsapp wpp-icon"></i></a></div></div>
+            <div class="city-row"><span>Marechal Deodoro</span><div class="city-icons"><a target="_blank" href="https://share.google/JglDtJdwFMxdEZ4Ls"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5582991869669"><i class="fa-brands fa-whatsapp wpp-icon"></i></a></div></div>
           </div>
-        </details>
+        </div>
 
-        <details id="estado-se">
-          <summary>Sergipe (SE) <i class="fa-solid fa-chevron-down"></i></summary>
-          <div class="acc-content">
-            <div class="city-row"><span>Aracaju</span><div class="city-icons"><a target="_blank" href="https://share.google/MJFRSXHrNNitk63Fm"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5579981487491"><i class="fa-brands fa-whatsapp"></i></a></div></div>
-            <div class="city-row"><span>Itabaiana</span><div class="city-icons"><a target="_blank" href="https://share.google/3weSu3dcovvV2GMW7"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5579999922762"><i class="fa-brands fa-whatsapp"></i></a></div></div>
+        <!-- SE -->
+        <div class="estado-item">
+          <button class="estado-btn" onclick="toggleEstado('cat-se')">Sergipe (SE) <span>▼</span></button>
+          <div class="cidades-lista" id="cat-se">
+            <div class="city-row"><span>Aracaju</span><div class="city-icons"><a target="_blank" href="https://share.google/MJFRSXHrNNitk63Fm"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5579981487491"><i class="fa-brands fa-whatsapp wpp-icon"></i></a></div></div>
+            <div class="city-row"><span>Itabaiana</span><div class="city-icons"><a target="_blank" href="https://share.google/3weSu3dcovvV2GMW7"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5579999922762"><i class="fa-brands fa-whatsapp wpp-icon"></i></a></div></div>
           </div>
-        </details>
+        </div>
 
-        <details id="estado-pb">
-          <summary>Paraíba (PB) <i class="fa-solid fa-chevron-down"></i></summary>
-          <div class="acc-content">
-            <div class="city-row"><span>João Pessoa</span><div class="city-icons"><a target="_blank" href="https://share.google/fm0DvEFPn70tGHary"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5583981447863"><i class="fa-brands fa-whatsapp"></i></a></div></div>
-            <div class="city-row"><span>Santa Rita</span><div class="city-icons"><a target="_blank" href="https://share.google/5c6EaTcjHgL9KX2Bf"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5583993507669"><i class="fa-brands fa-whatsapp"></i></a></div></div>
-            <div class="city-row"><span>Campina Grande</span><div class="city-icons"><a target="_blank" href="https://share.google/PZD0qUkRkOK7D28ea"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5583996925983"><i class="fa-brands fa-whatsapp"></i></a></div></div>
+        <!-- PB -->
+        <div class="estado-item">
+          <button class="estado-btn" onclick="toggleEstado('cat-pb')">Paraíba (PB) <span>▼</span></button>
+          <div class="cidades-lista" id="cat-pb">
+            <div class="city-row"><span>João Pessoa</span><div class="city-icons"><a target="_blank" href="https://share.google/fm0DvEFPn70tGHary"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5583981447863"><i class="fa-brands fa-whatsapp wpp-icon"></i></a></div></div>
+            <div class="city-row"><span>Santa Rita</span><div class="city-icons"><a target="_blank" href="https://share.google/5c6EaTcjHgL9KX2Bf"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5583993507669"><i class="fa-brands fa-whatsapp wpp-icon"></i></a></div></div>
+            <div class="city-row"><span>Campina Grande</span><div class="city-icons"><a target="_blank" href="https://share.google/PZD0qUkRkOK7D28ea"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5583996925983"><i class="fa-brands fa-whatsapp wpp-icon"></i></a></div></div>
           </div>
-        </details>
+        </div>
 
-        <details id="estado-rn">
-          <summary>Rio Grande do Norte (RN) <i class="fa-solid fa-chevron-down"></i></summary>
-          <div class="acc-content">
-            <div class="city-row"><span>Natal</span><div class="city-icons"><a target="_blank" href="https://share.google/wtM3MM7iB24kxQthq"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5584991070550"><i class="fa-brands fa-whatsapp"></i></a></div></div>
+        <!-- RN -->
+        <div class="estado-item">
+          <button class="estado-btn" onclick="toggleEstado('cat-rn')">Rio Grande do Norte (RN) <span>▼</span></button>
+          <div class="cidades-lista" id="cat-rn">
+            <div class="city-row"><span>Natal</span><div class="city-icons"><a target="_blank" href="https://share.google/wtM3MM7iB24kxQthq"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5584991070550"><i class="fa-brands fa-whatsapp wpp-icon"></i></a></div></div>
           </div>
-        </details>
+        </div>
 
-        <details id="estado-ce">
-          <summary>Ceará (CE) <i class="fa-solid fa-chevron-down"></i></summary>
-          <div class="acc-content">
-            <div class="city-row"><span>Fortaleza</span><div class="city-icons"><a target="_blank" href="https://share.google/RR8bNSXzdFOpZlXQB"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5585984363748"><i class="fa-brands fa-whatsapp"></i></a></div></div>
-          
+        <!-- CE -->
+        <div class="estado-item">
+          <button class="estado-btn" onclick="toggleEstado('cat-ce')">Ceará (CE) <span>▼</span></button>
+          <div class="cidades-lista" id="cat-ce">
+            <div class="city-row"><span>Fortaleza</span><div class="city-icons"><a target="_blank" href="https://share.google/RR8bNSXzdFOpZlXQB"><i class="fas fa-map-marker-alt maps-icon"></i></a><a target="_blank" href="https://wa.me/5585984363748"><i class="fa-brands fa-whatsapp wpp-icon"></i></a></div></div>
           </div>
-        </details>
-        <button class="btn-localizacao" type="button" onclick="toggleEstados()">
-  ENDEREÇOS
-  <span id="seta-localizacao">▼</span>
-</button>
+        </div>
 
-<div class="box-estados" id="boxEstados">
-  <div class="estado-item">
-    <button class="estado-btn" type="button" onclick="toggleEstado('sp')">
-      São Paulo (SP)
-      <span>▼</span>
-    </button>
-    <div class="cidades-lista" id="sp">
-      <a href="https://share.google/RBI6iw28csZpmHg2t" target="_blank">São Vicente</a>
-      <a href="https://share.google/JglDtJdwFMxdEZ4Ls" target="_blank">Carapicuíba</a>
-      <a href="https://share.google/MJFRSXHrNNitk63Fm" target="_blank">São José dos Campos</a>
-      <a href="https://share.google/3weSu3dcovvV2GMW7" target="_blank">Guarulhos</a>
-      <a href="https://share.google/fm0DvEFPn70tGHary" target="_blank">Jundiaí</a>
-      <a href="https://share.google/5c6EaTcjHgL9KX2Bf" target="_blank">Itaquaquecetuba</a>
-      <a href="https://share.google/PZD0qUkRkOK7D28ea" target="_blank">Campinas</a>
-      <a href="https://share.google/wtM3MM7iB24kxQthq" target="_blank">Salto</a>
-      <a href="https://share.google/RR8bNSXzdFOpZlXQB" target="_blank">Caieiras</a>
-    </div>
-  </div>
+      </div><!-- /boxCentral -->
 
-  <div class="estado-item">
-    <button class="estado-btn" type="button" onclick="toggleEstado('ba')">
-      Bahia (BA)
-      <span>▼</span>
-    </button>
-    <div class="cidades-lista" id="ba">
-      <a href="https://share.google/OBh1SGeM5Wd9bfQI9" target="_blank">Salvador</a>
-      <a href="https://share.google/5FrsXeQMC2kpTqEsQ" target="_blank">Camaçari</a>
-      <a href="https://share.google/oZDhzpfDW6mf4ZbNH" target="_blank">Feira de Santana</a>
-      <a href="https://share.google/28I71y38312i6i6e4" target="_blank">Lauro de Freitas</a>
-      <a href="https://share.google/cslwGLYIkfwXNxMIn" target="_blank">Cajazeiras</a>
-      <a href="https://share.google/oTRsmMdsPPAfNi9E3" target="_blank">Paripe</a>
-    </div>
-  </div>
+      <div class="divider"></div>
 
-  <div class="estado-item">
-    <button class="estado-btn" type="button" onclick="toggleEstado('pe')">
-      Pernambuco (PE)
-      <span>▼</span>
-    </button>
-    <div class="cidades-lista" id="pe">
-      <a href="https://share.google/fvUzWQMuBSbYmFUZg" target="_blank">Recife</a>
-      <a href="https://share.google/jZLLJfDfkeDmeiOM7" target="_blank">Caruaru</a>
-      <a href="https://share.google/VzTyWVgenWzjKY7bt" target="_blank">Olinda</a>
-      <a href="https://share.google/6rLSR5EjaJEsdCpXw" target="_blank">Paulista</a>
-      <a href="https://share.google/ETsxdlvdxFXiTWwog" target="_blank">Cabo de Santo Agostinho</a>
-      <a href="https://share.google/qS8qENwPuRa7fYj5e" target="_blank">Vitória de Santo Antão</a>
-    </div>
-  </div>
+      <!-- ENDEREÇOS (só Maps) -->
+      <button class="btn-secao" type="button" onclick="toggleSecao('boxEstados', 'seta-localizacao')">
+        ENDEREÇOS
+        <span id="seta-localizacao">▼</span>
+      </button>
 
-  <div class="estado-item">
-    <button class="estado-btn" type="button" onclick="toggleEstado('al')">
-      Alagoas (AL)
-      <span>▼</span>
-    </button>
-    <div class="cidades-lista" id="al">
-      <a href="https://share.google/IFqV8ALtV2OPZHX04" target="_blank">Marechal Deodoro</a>
-      <a href="https://share.google/K3mfYa1D7ZgdHc86d" target="_blank">Maceió</a>
-      <a href="https://share.google/zfF6X3Ttr4f9NZcVz" target="_blank">Arapiraca</a>
-    </div>
-  </div>
+      <div class="box-estados" id="boxEstados">
 
-  <div class="estado-item">
-    <button class="estado-btn" type="button" onclick="toggleEstado('se')">
-      Sergipe (SE)
-      <span>▼</span>
-    </button>
-    <div class="cidades-lista" id="se">
-      <a href="https://share.google/KRC1F89ZywfV5eKsL" target="_blank">Aracaju</a>
-      <a href="https://share.google/bLAJkvf53wLOOiX53" target="_blank">Itabaiana</a>
-    </div>
-  </div>
+        <div class="estado-item">
+          <button class="estado-btn" onclick="toggleEstado('sp')">São Paulo (SP) <span>▼</span></button>
+          <div class="cidades-lista" id="sp">
+            <a href="https://share.google/IFqV8ALtV2OPZHX04" target="_blank">Caieiras</a>
+            <a href="https://share.google/K3mfYa1D7ZgdHc86d" target="_blank">Guarulhos</a>
+            <a href="https://share.google/zfF6X3Ttr4f9NZcVz" target="_blank">Itaquaquecetuba</a>
+            <a href="https://share.google/fvUzWQMuBSbYmFUZg" target="_blank">Carapicuíba</a>
+            <a href="https://share.google/jZLLJfDfkeDmeiOM7" target="_blank">Salto</a>
+            <a href="https://share.google/VzTyWVgenWzjKY7bt" target="_blank">Jundiaí</a>
+            <a href="https://share.google/6rLSR5EjaJEsdCpXw" target="_blank">S. José dos Campos</a>
+            <a href="https://share.google/ETsxdlvdxFXiTWwog" target="_blank">São Vicente</a>
+            <a href="https://share.google/qS8qENwPuRa7fYj5e" target="_blank">Campinas</a>
+          </div>
+        </div>
 
-  <div class="estado-item">
-    <button class="estado-btn" type="button" onclick="toggleEstado('pb')">
-      Paraíba (PB)
-      <span>▼</span>
-    </button>
-    <div class="cidades-lista" id="pb">
-      <a href="https://share.google/1OvZVgSJWDXvA08bL" target="_blank">João Pessoa</a>
-      <a href="https://share.google/Ksk7dxZTa7DfPYtpM" target="_blank">Campina Grande</a>
-      <a href="https://share.google/nNKDWNj2wTjrvhGcZ" target="_blank">Santa Rita</a>
-    </div>
-  </div>
+        <div class="estado-item">
+          <button class="estado-btn" onclick="toggleEstado('ba')">Bahia (BA) <span>▼</span></button>
+          <div class="cidades-lista" id="ba">
+            <a href="https://share.google/OBh1SGeM5Wd9bfQI9" target="_blank">Camaçari</a>
+            <a href="https://share.google/5FrsXeQMC2kpTqEsQ" target="_blank">Pirajá</a>
+            <a href="https://share.google/oZDhzpfDW6mf4ZbNH" target="_blank">Paripe</a>
+            <a href="https://share.google/28I71y38312i6i6e4" target="_blank">Cajazeiras</a>
+            <a href="https://share.google/oZDhzpfDW6mf4ZbNH" target="_blank">Lauro de Freitas</a>
+            <a href="https://share.google/cslwGLYIkfwXNxMIn" target="_blank">Feira de Santana</a>
+          </div>
+        </div>
 
-  <div class="estado-item">
-    <button class="estado-btn" type="button" onclick="toggleEstado('rn')">
-      Rio Grande do Norte (RN)
-      <span>▼</span>
-    </button>
-    <div class="cidades-lista" id="rn">
-      <a href="https://share.google/uleK9kdw0awWcbqk3" target="_blank">Natal</a>
-    </div>
-  </div>
+        <div class="estado-item">
+          <button class="estado-btn" onclick="toggleEstado('pe')">Pernambuco (PE) <span>▼</span></button>
+          <div class="cidades-lista" id="pe">
+            <a href="https://share.google/oTRsmMdsPPAfNi9E3" target="_blank">Recife</a>
+            <a href="https://share.google/1OvZVgSJWDXvA08bL" target="_blank">Olinda</a>
+            <a href="https://share.google/Ksk7dxZTa7DfPYtpM" target="_blank">Vitória de Sto. Antão</a>
+            <a href="https://share.google/nNKDWNj2wTjrvhGcZ" target="_blank">Paulista</a>
+            <a href="https://share.google/KRC1F89ZywfV5eKsL" target="_blank">Cabo de Sto. Agostinho</a>
+            <a href="https://share.google/bLAJkvf53wLOOiX53" target="_blank">Caruaru</a>
+            <a href="https://share.google/uleK9kdw0awWcbqk3" target="_blank">Petrolina</a>
+          </div>
+        </div>
 
-  <div class="estado-item">
-    <button class="estado-btn" type="button" onclick="toggleEstado('ce')">
-      Ceará (CE)
-      <span>▼</span>
-    </button>
-    <div class="cidades-lista" id="ce">
-      <a href="https://share.google/uC7gApj8H63jZGObL" target="_blank">Fortaleza</a>
-    </div>
-  </div>
-</div>
-      </div>
-    </div>
-  </div>
+        <div class="estado-item">
+          <button class="estado-btn" onclick="toggleEstado('al')">Alagoas (AL) <span>▼</span></button>
+          <div class="cidades-lista" id="al">
+            <a href="https://share.google/uC7gApj8H63jZGObL" target="_blank">Maceió</a>
+            <a href="https://share.google/RBI6iw28csZpmHg2t" target="_blank">Arapiraca</a>
+            <a href="https://share.google/JglDtJdwFMxdEZ4Ls" target="_blank">Marechal Deodoro</a>
+          </div>
+        </div>
+
+        <div class="estado-item">
+          <button class="estado-btn" onclick="toggleEstado('se')">Sergipe (SE) <span>▼</span></button>
+          <div class="cidades-lista" id="se">
+            <a href="https://share.google/MJFRSXHrNNitk63Fm" target="_blank">Aracaju</a>
+            <a href="https://share.google/3weSu3dcovvV2GMW7" target="_blank">Itabaiana</a>
+          </div>
+        </div>
+
+        <div class="estado-item">
+          <button class="estado-btn" onclick="toggleEstado('pb')">Paraíba (PB) <span>▼</span></button>
+          <div class="cidades-lista" id="pb">
+            <a href="https://share.google/fm0DvEFPn70tGHary" target="_blank">João Pessoa</a>
+            <a href="https://share.google/5c6EaTcjHgL9KX2Bf" target="_blank">Santa Rita</a>
+            <a href="https://share.google/PZD0qUkRkOK7D28ea" target="_blank">Campina Grande</a>
+          </div>
+        </div>
+
+        <div class="estado-item">
+          <button class="estado-btn" onclick="toggleEstado('rn')">Rio Grande do Norte (RN) <span>▼</span></button>
+          <div class="cidades-lista" id="rn">
+            <a href="https://share.google/wtM3MM7iB24kxQthq" target="_blank">Natal</a>
+          </div>
+        </div>
+
+        <div class="estado-item">
+          <button class="estado-btn" onclick="toggleEstado('ce')">Ceará (CE) <span>▼</span></button>
+          <div class="cidades-lista" id="ce">
+            <a href="https://share.google/RR8bNSXzdFOpZlXQB" target="_blank">Fortaleza</a>
+          </div>
+        </div>
+
+      </div><!-- /boxEstados -->
+
+    </div><!-- /side-menu-content -->
+  </div><!-- /side-menu -->
+
   <div id="overlay" class="overlay" onclick="toggleMenu()"></div>
-  
 
-  <section id="inicio" class="hero bg-hero">
+  <!-- ========== HERO ========== -->
+  <section id="inicio" class="hero">
     <div class="hero-overlay">
       <div class="hero-text-box">
         <h2>O Acabamento Perfeito Que Seu Ambiente Merece</h2>
@@ -247,41 +248,41 @@
     </div>
   </section>
 
+  <!-- ========== SOBRE ========== -->
   <section id="sobre" class="sobre">
     <div class="container text-center">
-      <h2>São mais de 10 anos no marcado, com 32 lojas espalhadas por todo o pais</h2>
+      <h2>São mais de 10 anos no mercado, com 32 lojas espalhadas por todo o país</h2>
       <div class="bar-yellow"></div>
-      <img src="Imagens/Mapa da starforros(3).png" alt="Presença nacional" style="width: 280px; height: auto; margin: 20px auto; display: block;">
+      <img src="Imagens/Mapa da starforros(3).png" alt="Presença nacional" style="width:280px;height:auto;margin:20px auto;display:block;">
       <p class="text-elaborado">
         A <strong>Star Forros</strong> nasceu com o propósito de transformar a construção civil brasileira. O que começou como uma busca pela excelência técnica se consolidou em uma operação de escala nacional, focada em entregar acabamentos que elevam o valor de mercado de qualquer imóvel. Acreditamos que o teto é a alma do design; por isso, trabalhamos exclusivamente com materiais de alta performance, garantindo uma instalação limpa, rápida e com durabilidade medida em décadas.
       </p>
     </div>
   </section>
 
+  <!-- ========== ESPECIALIDADES ========== -->
   <section id="destaques" class="destaques">
-    <div class="overlay-light">
-      <div class="container text-center">
-        <h2>Nossas Especialidades</h2>
-        <div class="bar-yellow"></div>
-        <div class="cards-wrapper">
-          <div class="feature-card reveal">
-            <img src="Imagens/PHOTO-2025-10-01-13-28-48.jpg" alt="Salas Modernas">
-            <div class="card-txt"><h3>Salas Modernas</h3><p>Estilo e iluminação integrada.</p></div>
-          </div>
-          <div class="feature-card reveal">
-            <img src="Imagens/PHOTO-2025-11-22-09-53-27.jpg" alt="Áreas Gourmet">
-            <div class="card-txt"><h3>Áreas Gourmet</h3><p>Resistência e fácil limpeza.</p></div>
-          </div>
-          <div class="feature-card reveal">
-            <img src="Imagens/PHOTO-2026-03-04-15-23-09.jpg" alt="Varandas">
-            <div class="card-txt"><h3>Varandas e Garagens</h3><p>Durabilidade extrema ao tempo.</p></div>
-          </div>
+    <div class="container text-center">
+      <h2>Nossas Especialidades</h2>
+      <div class="bar-yellow"></div>
+      <div class="cards-wrapper">
+        <div class="feature-card reveal">
+          <img src="Imagens/PHOTO-2025-10-01-13-28-48.jpg" alt="Salas Modernas">
+          <div class="card-txt"><h3>Salas Modernas</h3><p>Estilo e iluminação integrada.</p></div>
+        </div>
+        <div class="feature-card reveal">
+          <img src="Imagens/PHOTO-2025-11-22-09-53-27.jpg" alt="Áreas Gourmet">
+          <div class="card-txt"><h3>Áreas Gourmet</h3><p>Resistência e fácil limpeza.</p></div>
+        </div>
+        <div class="feature-card reveal">
+          <img src="Imagens/PHOTO-2026-03-04-15-23-09.jpg" alt="Varandas">
+          <div class="card-txt"><h3>Varandas e Garagens</h3><p>Durabilidade extrema ao tempo.</p></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- TEXTO TRANSIÇÃO 1 -->
+  <!-- ========== VÍDEO TRANSIÇÃO ========== -->
   <div class="transicao-video">
     <video autoplay muted loop playsinline class="transicao-bg-video">
       <source src="Imagens/WhatsApp Video 2026-04-06 at 11.25.05.mp4" type="video/mp4">
@@ -291,11 +292,12 @@
     </div>
   </div>
 
+  <!-- ========== GALERIA ========== -->
   <section id="projetos" class="galeria">
     <div class="container text-center">
       <h2>Acompanhe nossos projetos</h2>
       <div class="bar-yellow"></div>
-      
+
       <div class="filter-btns">
         <button class="btn-f ativo" onclick="filtrar('todos')">Todos</button>
         <button class="btn-f" onclick="filtrar('branco')">PVC Branco</button>
@@ -324,26 +326,26 @@
     </div>
   </section>
 
-  <!-- TEXTO TRANSIÇÃO 2 -->
+  <!-- ========== TEXTO TRANSIÇÃO 2 ========== -->
   <div class="container text-center">
     <p>Seu ambiente merece mais do que um simples acabamento — merece o padrão de excelência da Star Forros. Transforme seu teto em uma verdadeira peça de design, com quem é referência nacional em acabamento premium, unindo sofisticação, durabilidade e tecnologia em cada detalhe.</p>
   </div>
 
+  <!-- ========== FOOTER ========== -->
   <footer class="footer-final">
     <div class="container footer-top">
       <img src="Imagens/Cópia de Design sem nome (1).png" class="foot-logo" alt="Logo Star Forros">
-      
-       <div class="footer-btns">
-    <a href="#" onclick="toggleMenu(); return false;" class="footer-btn btn-wpp">
-      <i class="fa-brands fa-whatsapp"></i> WhatsApp
-    </a>
-    <a href="https://www.instagram.com/starforros/" target="_blank" class="footer-btn btn-insta">
-      <i class="fa-brands fa-instagram"></i> Instagram
-    </a>
-    <a href="#" onclick="toggleMenu(); return false;" class="footer-btn btn-maps">
-      <i class="fas fa-map-marker-alt"></i> Localização
-    </a>
-  </div>
+      <div class="footer-btns">
+        <a href="#" onclick="toggleMenu(); return false;" class="footer-btn btn-wpp">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="https://www.instagram.com/starforros/" target="_blank" class="footer-btn btn-insta">
+          <i class="fa-brands fa-instagram"></i> Instagram
+        </a>
+        <a href="#" onclick="abrirEnderecos(); return false;" class="footer-btn btn-maps">
+          <i class="fas fa-map-marker-alt"></i> Localização
+        </a>
+      </div>
       <p>Clique no ícone do WhatsApp e entre em contato com a loja mais próxima para solicitar seu orçamento.</p>
     </div>
     <div class="container footer-grid">
@@ -368,9 +370,9 @@
           <a href="#" onclick="toggleMenu(); return false;" aria-label="WhatsApp">
             <i class="fa-brands fa-whatsapp"></i>
           </a>
-           <a href="#" onclick="toggleMenu(); return false;" aria-label="Google Maps">
-              <i class="fas fa-map-marker-alt"></i>
-           </a>
+          <a href="#" onclick="abrirEnderecos(); return false;" aria-label="Google Maps">
+            <i class="fas fa-map-marker-alt"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -379,8 +381,9 @@
     </div>
   </footer>
 
+  <!-- ========== BOTÕES FLUTUANTES ========== -->
   <div class="floating">
-    <button class="f-btn f-maps" onclick="toggleMenu()" aria-label="Google Maps">
+    <button class="f-btn f-maps" onclick="abrirEnderecos()" aria-label="Localização">
       <i class="fas fa-map-marker-alt"></i>
     </button>
     <a href="https://www.instagram.com/starforros/" target="_blank" class="f-btn f-insta" aria-label="Instagram">
@@ -391,86 +394,73 @@
     </button>
   </div>
 
+  <!-- ========== SCRIPTS ========== -->
   <script>
-function toggleMenu() {
-  const menu = document.getElementById("side-menu");
-  const botoes = document.querySelector(".floating");
+    // Abre/fecha o menu lateral e controla os botões flutuantes
+    function toggleMenu() {
+      const menu = document.getElementById("side-menu");
+      const botoes = document.querySelector(".floating");
+      menu.classList.toggle("active");
+      botoes.style.display = menu.classList.contains("active") ? "none" : "flex";
+    }
 
-  menu.classList.toggle("active");
+    // Abre o menu e expande APENAS a seção de Endereços
+    function abrirEnderecos() {
+      const menu = document.getElementById("side-menu");
+      const botoes = document.querySelector(".floating");
+      menu.classList.add("active");
+      botoes.style.display = "none";
 
-  if (menu.classList.contains("active")) {
-    if (botoes) botoes.style.display = "none";
-  } else {
-    if (botoes) botoes.style.display = "flex";
-  }
-}
-  
+      const box = document.getElementById("boxEstados");
+      const seta = document.getElementById("seta-localizacao");
+      box.classList.add("ativo");
+      seta.textContent = "▲";
 
-  function irParaEstado(id) {
-    toggleMenu();
-    setTimeout(function() {
-      const el = document.getElementById(id);
-      if (!el) return;
-      document.querySelectorAll('.accordion details').forEach(d => {
-        if (d !== el) d.removeAttribute('open');
+      setTimeout(() => {
+        box.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 300);
+    }
+
+    // Abre/fecha uma seção principal (Central ou Endereços)
+    function toggleSecao(boxId, setaId) {
+      const box = document.getElementById(boxId);
+      const seta = document.getElementById(setaId);
+      box.classList.toggle("ativo");
+      seta.textContent = box.classList.contains("ativo") ? "▲" : "▼";
+    }
+
+    // Abre/fecha a lista de cidades de um estado
+    function toggleEstado(id) {
+      const lista = document.getElementById(id);
+      if (!lista) return;
+      lista.classList.toggle("ativa");
+    }
+
+    // Filtro da galeria
+    function filtrar(cat) {
+      document.querySelectorAll(".btn-f").forEach(b => b.classList.remove("ativo"));
+      const btnAtivo = Array.from(document.querySelectorAll(".btn-f"))
+        .find(b => b.getAttribute("onclick").includes(cat));
+      if (btnAtivo) btnAtivo.classList.add("ativo");
+
+      document.querySelectorAll(".gal-item").forEach(item => {
+        if (cat === "todos") {
+          item.style.display = item.classList.contains("extra") ? "none" : "block";
+        } else {
+          item.style.display = item.classList.contains(cat) ? "block" : "none";
+        }
+        item.classList.add("visivel");
       });
-      el.setAttribute('open', true);
-      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }, 400);
-  }
+    }
 
-  function filtrar(cat) {
-    const btns = document.querySelectorAll('.btn-f');
-    btns.forEach(b => b.classList.remove('ativo'));
-    const btnClicado = Array.from(btns).find(b => b.getAttribute('onclick').includes(cat));
-    if (btnClicado) btnClicado.classList.add('ativo');
+    window.onload = () => filtrar("todos");
 
-    const itens = document.querySelectorAll('.gal-item');
-    itens.forEach(item => {
-      if (cat === 'todos') {
-        item.style.display = item.classList.contains('extra') ? 'none' : 'block';
-      } else {
-        item.style.display = item.classList.contains(cat) ? 'block' : 'none';
-      }
-      item.classList.add('visivel');
-    });
-  }
+    // Animação de revelar ao rolar
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add("visivel"); });
+    }, { rootMargin: "0px 0px -100px 0px", threshold: 0.05 });
 
-  window.onload = () => filtrar('todos');
-
-  const observerOptions = {
-    root: null,
-    rootMargin: '0px 0px -100px 0px',
-    threshold: 0.05
-  };
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visivel');
-      }
-    });
-  }, observerOptions);
-
-  document.querySelectorAll('.gal-item, .reveal').forEach(el => {
-    observer.observe(el);
-  });
-
-function toggleEstados() {
-  const box = document.getElementById("boxEstados");
-  const seta = document.getElementById("seta-localizacao");
-  const botoes = document.getElementById("botoesFlutuantes");
-
-  box.classList.toggle("ativo");
-
-  if (box.classList.contains("ativo")) {
-    seta.textContent = "▲";
-    if (botoes) botoes.classList.add("oculto");
-  } else {
-    seta.textContent = "▼";
-    if (botoes) botoes.classList.remove("oculto");
-  }
-}
+    document.querySelectorAll(".gal-item, .reveal").forEach(el => observer.observe(el));
   </script>
 </body>
 </html>
