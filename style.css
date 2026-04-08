@@ -358,3 +358,14 @@ body { background: var(--navy); color: var(--text); overflow-x: hidden; }
 .maps-icon {
   display: none !important;
 }
+.cidades-lista a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-maps {
+  color: #ff3b3b;
+  font-size: 16px;
+  pointer-events: none; /* não interfere no clique */
+}
