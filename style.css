@@ -369,3 +369,33 @@ body { background: var(--navy); color: var(--text); overflow-x: hidden; }
   font-size: 16px;
   pointer-events: none; /* não interfere no clique */
 }
+
+.manual {
+  padding: 80px 20px;
+  background-color: var(--navy);
+}
+
+.manual h2 {
+  font-size: clamp(26px, 4vw, 40px);
+  color: var(--star-yellow);
+  font-weight: 700;
+}
+
+.btn-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 36px;
+  background: var(--star-yellow);
+  color: #000;
+  font-size: 17px;
+  font-weight: 700;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-download:hover {
+  transform: scale(1.05);
+  background: #e6bf00;
+}
